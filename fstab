@@ -1,0 +1,11 @@
+#EFI Boot
+/dev/nvme0n1p1         /efi           vfat             umask=0077         0 2
+
+#Swap
+/dev/nvme0n1p2         none           swap             sw                 0 0
+
+#Root
+/dev/nvme0n1p3         /              btrfs            defaults,noatime   0 1
+
+#CD
+/dev/cdrom             /mnt/cdrom     auto             noauto,user        0 0
